@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{55880B39-EAD7-4962-8712-A0F7BCC37D21}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>opencv_test</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+    <RemoteRootDir>/home/ivs_dev/yingshi/screenunderstandingrelease/projects/linux</RemoteRootDir>
+    <RemoteProjectRelDir />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+    <RemoteRootDir>/home/ivs_dev/yingshi/screenunderstandingrelease/projects/linux</RemoteRootDir>
+    <RemoteProjectRelDir />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <RemoteRootDir>/home/hongji/xiaowei/cyclone/cv_4.6/projects/linux</RemoteRootDir>
+    <RemoteProjectRelDir />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+    <RemoteRootDir>~/yingshi/screenunderstandingrelease/projects/linux</RemoteRootDir>
+    <RemoteProjectRelDir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin_linux/$(PlatformTarget)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/local/$(ProjectName)/</IntDir>
+    <RemoteIntRelDir>../../LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/remote/$(ProjectName)/</RemoteIntRelDir>
+    <RemoteOutRelDir>../../../../LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/remote/$(ProjectName)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)</RemoteDeployDir>
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <TargetExt>.out</TargetExt>
+    <MultiProcNumber>8</MultiProcNumber>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin_linux/$(PlatformTarget)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/local/$(ProjectName)/</IntDir>
+    <RemoteIntRelDir>../../LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/remote/$(ProjectName)/</RemoteIntRelDir>
+    <RemoteOutRelDir>../../../../LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/remote/$(ProjectName)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)</RemoteDeployDir>
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <TargetExt>.out</TargetExt>
+    <MultiProcNumber>8</MultiProcNumber>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionDir)LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/local/$(ProjectName)/</OutDir>
+    <IntDir>$(SolutionDir)LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/local/$(ProjectName)/</IntDir>
+    <RemoteIntRelDir>../../LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/remote/$(ProjectName)/</RemoteIntRelDir>
+    <RemoteOutRelDir>../../../../LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/remote/$(ProjectName)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)</RemoteDeployDir>
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <MultiProcNumber>8</MultiProcNumber>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionDir)bin_linux/$(PlatformTarget)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/local/$(ProjectName)/</IntDir>
+    <RemoteIntRelDir>../../LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/remote/$(ProjectName)/</RemoteIntRelDir>
+    <RemoteOutRelDir>../../../../LinuxOutput/$(PlatformTarget)/$(Configuration)/buildtemp/remote/$(ProjectName)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)</RemoteDeployDir>
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <MultiProcNumber>8</MultiProcNumber>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetExt>.out</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\opencv_test\video_reader.cpp" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)external/linux/$(Platform)/gflags/include;$(SolutionDir)external/linux/$(Platform)/glog/include;$(SolutionDir)external/linux/$(Platform)/jsoncpp/include;$(SolutionDir)external/linux/$(Platform)/boost/include;$(SolutionDir)external/linux/$(Platform)/opencv-cuda/include/opencv4;$(SolutionDir)external/linux/$(Platform)/onnxruntime/include;$(SolutionDir)external/linux/$(Platform)/thrift/include;$(SolutionDir)external/linux/$(Platform)/breakpad/include/breakpad;$(SolutionDir)external/linux/$(Platform)/poco/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++17</CppLanguageStandard>
+      <AdditionalOptions>-fPIC %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(RemoteRootDir)/../../lib_linux/$(PlatformTarget)/$(Configuration);$(RemoteRootDir)/../../bin_linux/$(PlatformTarget)/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/glog/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/gflags/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/jsoncpp/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/thrift/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/opencv-cuda/lib/;$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/onnxruntime/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/boost/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/breakpad/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/poco/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/ffmpeg/lib/$(Configuration)</AdditionalLibraryDirectories>
+      <LibraryDependencies>pthread;dl;avformat;avcodec;avutil;:libopencv_videoio.so.4.5.5;:libopencv_video.so.4.5.5;:libopencv_imgcodecs.so.4.5.5;:libopencv_imgproc.so.4.5.5;:libopencv_core.so.4.5.5;:libopencv_cudacodec.so.4.5.5;:libopencv_cudaimgproc.so.4.5.5;%(LibraryDependencies)</LibraryDependencies>
+      <SharedLibrarySearchPath>
+      </SharedLibrarySearchPath>
+      <AdditionalOptions>-Wl,-rpath=/home/ivs_dev/code/ffmpeg-4.2/out/lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <RemotePostBuildEvent>
+      <Command>
+      </Command>
+    </RemotePostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)external/linux/$(Platform)/gflags/include;$(SolutionDir)external/linux/$(Platform)/glog/include;$(SolutionDir)external/linux/$(Platform)/jsoncpp/include;$(SolutionDir)external/linux/$(Platform)/boost/include;$(SolutionDir)external/linux/$(Platform)/opencv/include;$(SolutionDir)external/linux/$(Platform)/onnxruntime/include;$(SolutionDir)external/linux/$(Platform)/thrift/include;$(SolutionDir)external/linux/$(Platform)/breakpad/include/breakpad;$(SolutionDir)external/linux/$(Platform)/poco/include;$(SolutionDir)external/linux/$(Platform)/ffmpeg/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++17</CppLanguageStandard>
+      <AdditionalOptions>-fPIC %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(RemoteRootDir)/../../lib_linux/$(PlatformTarget)/$(Configuration);$(RemoteRootDir)/../../bin_linux/$(PlatformTarget)/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/glog/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/gflags/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/jsoncpp/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/thrift/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/opencv/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/onnxruntime/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/boost/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/breakpad/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/poco/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/ffmpeg/lib</AdditionalLibraryDirectories>
+      <LibraryDependencies>pthread;dl;avformat;avcodec;avutil;:libopencv_imgcodecs.so.4.5.0;:libopencv_dnn.so.4.5.0;:libopencv_imgproc.so.4.5.0;:libopencv_core.so.4.5.0;%(LibraryDependencies)</LibraryDependencies>
+      <SharedLibrarySearchPath>
+      </SharedLibrarySearchPath>
+      <AdditionalOptions>-Wl,-rpath=. %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <RemotePostBuildEvent>
+      <Command>
+      </Command>
+    </RemotePostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)external/linux/$(Platform)/gflags/include;$(SolutionDir)external/linux/$(Platform)/glog/include;$(SolutionDir)external/linux/$(Platform)/jsoncpp/include;$(SolutionDir)external/linux/$(Platform)/boost/include;$(SolutionDir)external/linux/$(Platform)/opencv/include;$(SolutionDir)external/linux/$(Platform)/onnxruntime/include;$(SolutionDir)external/linux/$(Platform)/thrift/include;$(SolutionDir)external/linux/$(Platform)/breakpad/include/breakpad;$(SolutionDir)external/linux/$(Platform)/poco/include;$(SolutionDir)external_cyclone/linux/$(Platform)/cvbase/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++17</CppLanguageStandard>
+      <AdditionalOptions>-fPIC %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(RemoteRootDir)/../../lib_linux/$(PlatformTarget)/$(Configuration);$(RemoteRootDir)/../../bin_linux/$(PlatformTarget)/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/glog/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/gflags/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/jsoncpp/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/thrift/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/opencv/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/onnxruntime/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/boost/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/breakpad/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/poco/lib/$(Configuration)</AdditionalLibraryDirectories>
+      <LibraryDependencies>basic_utility;business_utility;inference_service_core;pthread;dl;:libopencv_imgcodecs.so.4.1.1;:libopencv_dnn.so.4.1.1;:libopencv_imgproc.so.4.1.1;:libopencv_core.so.4.1.1;:libboost_filesystem.so.1.70.0;:libboost_locale.so.1.70.0;:libbreakpad_client.a;:libjsoncpp.so.1.9.5;:libglogd.so.0.5.0;:libthriftd.so.0.12.0;:libgflags_debug.so.2.2.2;:libPocoFoundationd.so.81;:libPocoNetd.so.81;%(LibraryDependencies)</LibraryDependencies>
+      <Version>false</Version>
+      <AdditionalOptions>-Wl,-rpath=. %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)tools\Linux\thirdpartlib_cp\$(PlatformTarget)\$(ProjectName).bat $(SolutionDir) $(PlatformTarget) $(ConfigurationName) linux bin_linux lib</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>copy $(SolutionDir)ver_control\linux\touch_ver.bat $(SolutionDir)bin_linux\$(PlatformTarget)\$(ConfigurationName)
+cd $(SolutionDir)bin_linux\$(PlatformTarget)\$(ConfigurationName)
+call touch_ver.bat $(SolutionDir)bin_linux\$(PlatformTarget)\$(ConfigurationName) $(TargetFileName)
+del $(SolutionDir)bin_linux\$(PlatformTarget)\$(ConfigurationName)\touch_ver.bat</Command>
+    </PreBuildEvent>
+    <RemotePostBuildEvent>
+      <Command>cp $(RemoteRootDir)/../../ver_control/linux/version.sh $(RemoteRootDir)/../../bin_linux/$(PlatformTarget)/$(ConfigurationName)/$(TargetFileName)_ver.sh;cd $(RemoteRootDir)/../../bin_linux/$(PlatformTarget)/$(ConfigurationName);cp $(RemoteOutDir)/$(TargetFileName) $(RemoteRootDir)/../../bin_linux/$(PlatformTarget)/$(ConfigurationName)/$(TargetFileName).x.x.x;./$(TargetFileName)_ver.sh $(RemoteRootDir)/../../bin_linux/$(PlatformTarget)/$(ConfigurationName) $(TargetFileName).x.x.x $(TargetFileName);rm $(TargetFileName)_ver.sh;</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)external/linux/$(Platform)/ffmpeg/include;$(SolutionDir)external/linux/$(Platform)/gflags/include;$(SolutionDir)external/linux/$(Platform)/glog/include;$(SolutionDir)external/linux/$(Platform)/jsoncpp/include;$(SolutionDir)external/linux/$(Platform)/boost/include;$(SolutionDir)external/linux/$(Platform)/opencv/include;$(SolutionDir)external/linux/$(Platform)/onnxruntime/include;$(SolutionDir)external/linux/$(Platform)/thrift/include;$(SolutionDir)external/linux/$(Platform)/breakpad/include/breakpad;$(SolutionDir)external/linux/$(Platform)/poco/include;$(SolutionDir)external_cyclone/linux/$(Platform)/cvbase/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++17</CppLanguageStandard>
+      <AdditionalOptions>-fPIC %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(RemoteRootDir)/../../lib_linux/$(PlatformTarget)/$(Configuration);$(RemoteRootDir)/../../bin_linux/$(PlatformTarget)/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/ffmpeg/lib;$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/glog/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/gflags/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/jsoncpp/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/thrift/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/opencv/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/onnxruntime/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/boost/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/breakpad/lib/$(Configuration);$(RemoteRootDir)/../../external/linux/$(PlatformTarget)/poco/lib/$(Configuration)</AdditionalLibraryDirectories>
+      <LibraryDependencies>pthread;dl;avformat;avcodec;avutil;:libopencv_imgcodecs.so.4.5.5;:libopencv_dnn.so.4.5.5;:libopencv_imgproc.so.4.5.5;:libopencv_core.so.4.5.5;:libboost_filesystem.so.1.70.0;:libboost_locale.so.1.70.0;:libbreakpad_client.a;:libjsoncpp.so.1.9.5;:libglog.so.0.5.0;:libthrift.so.0.12.0;:libgflags.so.2.2.2;%(LibraryDependencies)</LibraryDependencies>
+      <Version>false</Version>
+      <AdditionalOptions>-Wl,-rpath=. %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <RemotePostBuildEvent>
+      <Command>
+      </Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
