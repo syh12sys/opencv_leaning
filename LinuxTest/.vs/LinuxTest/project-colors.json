@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ac4bd9ca-2423-4d8d-b12d-e5b55c1f3d81": {
+      "ProjectGuid": "ac4bd9ca-2423-4d8d-b12d-e5b55c1f3d81",
+      "DisplayName": "LinuxTest",
+      "ColorIndex": 0
+    },
+    "52072a32-8d69-4f42-b13b-34c1cf18d4e1": {
+      "ProjectGuid": "52072a32-8d69-4f42-b13b-34c1cf18d4e1",
+      "DisplayName": "ProcessSingle",
+      "ColorIndex": 1
+    },
+    "fff47087-81ba-4a28-b142-2066f0ca1142": {
+      "ProjectGuid": "fff47087-81ba-4a28-b142-2066f0ca1142",
+      "DisplayName": "ProcessCreateAndExit",
+      "ColorIndex": 2
+    },
+    "8cc65138-a85a-483a-9a85-87ad7d5f0550": {
+      "ProjectGuid": "8cc65138-a85a-483a-9a85-87ad7d5f0550",
+      "DisplayName": "TestNamePipe",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
